@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="page-description">图标</view>
+
+  <view class="page-section">
+    <view class="page-section-title">Type</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconType}}">
+        <view class="item">
+          <icon type="{{item}}" size="45"></icon>
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Size</view>
+    <view class="page-section-demo icon-list">
+      <block a:for={{iconSize}}>
+        <view class="item">
+          <icon type="success" size="{{item}}"></icon>
+          <view>{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Color</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconColor}}">
+        <view class="item">
+          <icon type="success" size='50' color="{{item}}"></icon>
+          <view>{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,9 @@
+.page-section {
+    margin: 20rpx;
+    padding: 20rpx;
+    background-color: #4eaf;
+}
+
+button  {
+    margin-top: 30rpx;
+}

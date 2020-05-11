@@ -1,0 +1,3 @@
+<view>
+  <rich-text nodes="{{[{name:'div', attrs:{style:'color: green;'},children: [{type: 'text',text: 'rich text'}]}]}}"></rich-text>
+</view>

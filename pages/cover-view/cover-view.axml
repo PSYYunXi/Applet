@@ -1,0 +1,15 @@
+<!-- 文本视图，可覆盖在原生组件之上 包括 map， canvas -->
+<view class="page">
+  <view class="page-title">cover-view 文本视图</view>
+  <view class="page-section">
+    <view class="page-section-demo" style="position:relative">
+      <map longitude="120.131441" latitude="30.279383" show-location="{{true}}" style="width:100%; height:200px"/>
+      <cover-view class="cover-view">
+        <cover-view class="cover-view-item cover-view-item-1"></cover-view>
+        <cover-view class="cover-view-item cover-view-item-2"></cover-view>
+        <cover-view class="cover-view-item cover-view-item-3"></cover-view>
+      </cover-view>
+      <cover-image src="/image/ant.png"/ style="">
+    </view>
+  </view>
+</view>

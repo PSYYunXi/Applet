@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-description">嵌入页面的滚动选择器</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <picker-view value="{{value}}" onChange="onChange" class="my-picker">
+        <picker-view-column>
+          <block a:for="{{[2013,2014,2015,2016,2017]}}">
+            <view>{{item}}</view>
+          </block>
+        </picker-view-column>
+        <picker-view-column>
+          <view>Spring</view>
+          <view>Summer</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>

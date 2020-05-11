@@ -1,0 +1,22 @@
+button + button {
+    margin-top:  32rpx;
+}
+
+.form-row-label {
+    margin-bottom: 20rpx;
+}
+
+.page-section-title {
+    margin-bottom: 20rpx;
+}
+
+.page-section {
+    margin: 32rpx;
+    padding: 20rpx;
+    background-color: #e213;
+}
+
+.page-section-btns {
+    display: flex;
+    flex-direction: row;
+}

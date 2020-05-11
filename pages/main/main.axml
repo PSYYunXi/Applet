@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="page-section">
+    <scroll-view class="scroll-view">
+      <block a:for="{{pages}}">
+        <view onTap="click" class="row" data-index="{{index}}" >{{item}}</view>
+        <view class="row-line" />
+      </block>
+    </scroll-view>
+  </view>
+</view>

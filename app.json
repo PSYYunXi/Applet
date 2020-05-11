@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/picker/picker",
+    "pages/pickvier/pickvier",
+    "pages/swicth/swicth",
+    "pages/checkbox/checkbox",
+    "pages/radio/radio",
+    "pages/textarea/textarea",
+    "pages/input/input",
+    "pages/label/label",
+    "pages/form/form",
+    "pages/button/button",
+    "pages/richText/richText",
+    "pages/progress/progress",
+    "pages/icon/icon",
+    "pages/text/text",
+    "pages/movable-area/movable-area",
+    "pages/cover-view/cover-view",
+    "pages/scroll-view/scroll-view",
+    "pages/swiper/swiper",
+    "pages/view/view"
+
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page-description">滑块视图容器</view>
+  <view class="page-section">
+    <view class="page-swiper">
+      <swiper 
+        class="demo-swiper"
+        indicator-dots="{{indicatorDots}}"
+        vertical="{{vertical}}"
+        style="height:300rpx"
+        previous-margin="50px"
+        next-margin="50px"
+        interval="{{interval}}"
+        circular="{{circular}}"
+      >
+        <block a:for="{{bacground}}">
+          <swiper-item key="swiper-item-{{index}}">
+           <!-- <view class="swiper-item bc_{{item}}" style="background-color: {{item}};width=100%;height:300rpx"/> -->
+            <view class="swiper-item bc_{{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="margin-t">
+        <slider onChange="intervalChange" value="{{interval}}" show-value min="500" max="2000"/>
+        <view>{{interval}}</view>
+      </view>
+      <view class="page-section-btns">
+        <view onTap="changeIndicatorDots">indicator-dots</view>
+        <view onTap="changeAutoPlay">autoplay</view>
+        <view onTap="changeVertical">changeVertical</view>
+      </view>
+      <view>
+        <view onTap="changeCircular">circular</view>
+      </view>
+    </view>
+  </view>
+</view>

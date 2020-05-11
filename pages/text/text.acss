@@ -1,0 +1,11 @@
+.page {
+    padding: 10px;
+}
+
+.text-demo-title {
+    margin-left: 30rpx;
+}
+
+.text-demo-text {
+    font-size: 36rpx;
+}

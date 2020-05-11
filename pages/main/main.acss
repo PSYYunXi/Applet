@@ -1,0 +1,10 @@
+.row {
+    margin: 20rpx;
+    font-size: 36rpx;
+}
+
+.ow-line {
+    background-color: #4ef4;
+    height: 1;
+    width: 100%;
+}

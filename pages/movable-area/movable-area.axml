@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="page-description">可移动视图</view>
+  <view class="page-section">
+    <view class="page-section-title">movable-view区域小于movable-area</view>
+    <view class="page-section-demo">
+      <movable-area class="movable-area">
+        <movable-view class="movable-view" x="{{x}}" y="{{y}}" direction="all">movable-view</movable-view>
+      </movable-area>
+    </view>
+    <button style="margin-left:10px;margin-right:10px;margin-top:10rpx" type="primary" onTap="onButtonTap">点击移动到（30px,30px)</button>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">movable-view区域大于movable-area</view>
+    <view class="page-section-demo">
+      <movable-area class="movable-area">
+        <movable-view class="max" x="{{x}}" y="{{y}}" direction="all">movable-view</movable-view>
+      </movable-area>
+    </view>
+    <button style="margin-left:10px;margin-right:10px;margin-top:10rpx" type="primary" onTap="onButtonTap">点击移动到（30px,30px)</button>
+  </view>
+  
+
+  <view class="page-section">
+    <view class="page-section-title">横向移动</view>
+    <view class="page-section-demo">
+      <movable-area class="movable-area">
+        <movable-view class="movable-view" x="{{x}}" y="{{y}}" direction="horizontal">movable-view</movable-view>
+      </movable-area>
+    </view>
+    <button style="margin-left:10px;margin-right:10px;margin-top:10rpx" type="primary" onTap="onButtonTap">点击移动到（30px,30px)</button>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">垂直移动</view>
+    <view class="page-section-demo">
+      <movable-area class="movable-area">
+        <movable-view class="movable-view" x="{{x}}" y="{{y}}" direction="vertical">movable-view</movable-view>
+      </movable-area>
+    </view>
+    <button style="margin-left:10px;margin-right:10px;margin-top:10rpx" type="primary" onTap="onButtonTap">点击移动到（30px,30px)</button>
+  </view>
+  
+</view>
