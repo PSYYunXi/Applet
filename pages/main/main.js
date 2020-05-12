@@ -2,9 +2,10 @@ Page({
   data: {
     idx:0,
     pages:[
+      'css',
       'button',
       'checkbox',
-      'cover-vier',
+      'cover-view',
       'form',
       'icon',
       'input',
@@ -20,6 +21,8 @@ Page({
       'text',
       'textarea',
       'view',
+      'image',
+
     ]
   },
   onLoad() {},

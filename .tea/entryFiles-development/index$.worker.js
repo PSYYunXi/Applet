@@ -29,6 +29,7 @@ if(AFAppX.registerApp) {
 
 function success() {
 require('../../app');
+require('../../pages/css/css?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/main/main?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/picker/picker?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/pickvier/pickvier?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
@@ -49,6 +50,7 @@ require('../../pages/cover-view/cover-view?hash=32d7d2807ed4e666ef03b4b3fe8c38ec
 require('../../pages/scroll-view/scroll-view?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/swiper/swiper?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/view/view?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
+require('../../pages/image/image?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

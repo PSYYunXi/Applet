@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/css/css",
     "pages/main/main",
     "pages/picker/picker",
     "pages/pickvier/pickvier",
@@ -19,8 +20,9 @@
     "pages/cover-view/cover-view",
     "pages/scroll-view/scroll-view",
     "pages/swiper/swiper",
-    "pages/view/view"
-
+    "pages/view/view",
+    "pages/image/image"
+    
   ],
   "window": {
     "defaultTitle": "My App"

@@ -1,0 +1,58 @@
+.page-header {
+    margin-top: 100rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 5rpx;
+    height: 200rpx;
+    background-color: gray;
+    padding: 10rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.header-message {
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150rpx;
+    align-items: flex-start;
+    width: 320rpx;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title-name {
+    text-overflow: ellipsis;
+}
+
+.header-logo {
+    position: absolute;
+    right: 10rpx;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.header-logo-icon {
+    color: orange;
+    margin-left: 20rpx;
+}
+
+.header-logo-message {
+    border-radius: 5rpx;
+    padding: 10rpx;
+    border: 1px solid blue;
+}

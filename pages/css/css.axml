@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="page-header">
+    <image class="header-image" mode="aspectFill" src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1906469856,4113625838&fm=26&gp=0.jpg"/>
+    <view class="header-message">
+      <text class="header-name">王乐</text>
+      <view class="header-title">
+        <icon type="success" size="20" color="brown"></icon>
+        <text class="header-title-name">创世神</text>
+      </view>
+      <view class="header-title">
+        <icon type="success" size="20" color="brown"></icon>
+        <text class="header-title-name" number-of-lines="1">海的彼岸有我未曾见证的风采</text>
+      </view>
+    </view>
+    <view class="header-logo">
+      <view>
+        <icon class="header-logo-icon" type="success" size="20" color="orange"></icon>
+        <icon class="header-logo-icon" type="success" size="20" color="orange"></icon>
+        <icon class="header-logo-icon" type="success" size="20" color="orange"></icon>
+      </view>
+      <view class="header-logo-message"> 编辑个人资料 </view>
+    </view>
+  </view>
+</view>
