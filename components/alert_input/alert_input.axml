@@ -1,0 +1,20 @@
+<view class="alert-input"> 
+  <view class="alert-section">
+    <form onSubmit="onSave">
+      <view class="alert-header">
+        <text>{{title}}</text>
+        <view class="alert-delete" catchTap="onCancel">
+          <image class="alert-delete-icon" mode="aspectFit" src="/images/guanbi_bt.png"/>
+        </view>
+      </view>
+      <view class="alert-body">
+        <textarea name="textarea" class="alert-textarea" placeholder="请输入内容" type='number' maxlength="-1" focus="{{true}}">
+        </textarea>
+      </view>
+      <view class="alert-footer">
+        <button class="alert-button alert-cancel" hover-class="alert-cancel" type="primary" onTap="onCancel">取消</button>
+        <button form-type="submit" class="alert-button alert-save" type="primary">确定</button>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<view class="alert-calendar">
+  <view class="calendar">
+    <view class="calendar-header">
+      <view onTap="onCancel">取消</view>
+      <view class="calendar-sure" onTap="onSure">确定</view>
+    </view>
+    <view class="calendar-separator-line"/>
+    <view class="section">
+      <view class="title flex-box">
+        <view onTap="past"><text class="iconfont icon-zuo"></text></view>
+        <view class="title">{{currentShow}}</view>
+        <view onTap="future"><text class="iconfont icon-you"></text></view>
+      </view>
+      <view class="week flex-box">
+        <view a:for="{{week}}" a:key="{{item}}" class="weekday">{{item}}</view>
+      </view>
+      <view class="days flex-box">
+        <view a:for="{{days}}" a:key="{{item}}" class="day" data-today="{{item.today}}" onTap="{{item.today.length > 0 ? 'select' : 'selectNone'}}">
+          <view a:if="{{type=='range'}}" class="circle {{item.sign ? 'sign' : ''}}">
+            <view class="day-item">
+              <text>{{item.day}}</text>
+              <view class="day-point" a:if="{{item.today == today}}"/> 
+              <view class="day-range"> 
+                <text>{{item.start ? '起' : ''}}</text>
+                <text>{{item.end ? '止' : ''}}</text>
+              </view>
+            </view>
+          </view>
+          <view a:else class="circle {{item.sign ? 'sign' : ''}}">
+            <view class="day-item">
+              <text>{{item.day}}</text>
+              <view class="day-point" a:if="{{item.today == today}}"/> 
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

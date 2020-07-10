@@ -1,0 +1,67 @@
+.alert-delete-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-card {
+  width: 630rpx;
+  height: 363rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20rpx;
+  animation: fadeleftIn .2s;
+  animation-name: popIn;
+}
+
+.delete-title {
+  font-size: 36rpx;
+  color: #3b3f4f;
+  font-weight: 600;
+  margin-top: 50rpx;
+}
+
+.delete-message {
+  font-size: 32rpx;
+  color: #3b3f4f;
+  margin-top: 30rpx;
+}
+
+.delete-container {
+  width: 630rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.delete-cancel {
+  width: 230rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #fff;
+  border: 1px solid #979797;
+  color: #3b3f4f;
+  font-size: 36rpx;
+  margin-left: 65rpx;
+}
+
+.delete-sure {
+  width: 230rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #427cfb;
+  border: 1px solid #427cfb;
+  color: #fff;
+  font-size: 36rpx;
+  margin-left: 40rpx;
+}

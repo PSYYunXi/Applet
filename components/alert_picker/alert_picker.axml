@@ -1,0 +1,20 @@
+<view class="alert-picker"> 
+  <view class="picker-section {{isIphoneXSeries ? 'iphoneX-alert-body' : ''}}">
+    <view class="picker-header">
+        <text>{{title}}</text>
+        <view class="picker-delete" catchTap="onCancel">
+          <image class="picker-delete-icon" mode="aspectFit" src="/images/guanbi_bt.png"/>
+        </view>
+    </view>
+    <view class="picker-body">
+      <picker-view  onChange="onChangePicker"  indicator-class="picker-indicator" onChange="onChangePicker">
+        <picker-view-column  class="column">
+          <block a:for="{{options}}">
+            <view class="picker-item">{{item.option_name}}</view>
+          </block>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <button class="sure-button" type="primary" onTap="onSure">确定</button>
+  </view>
+</view>

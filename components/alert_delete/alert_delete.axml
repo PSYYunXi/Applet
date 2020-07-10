@@ -1,0 +1,10 @@
+<view class="alert-delete-section"> 
+  <view class="delete-card">
+    <text class="delete-title">温馨提示</text>
+    <text class="delete-message">是否删除此记录</text>
+    <view class="delete-container">
+      <button class="delete-cancel" hover-class="delete-cancel" type="primary" onTap="onCancel">取消</button>
+      <button class="delete-sure" hover-class="delete-sure" type="primary" onTap="onSure">确定</button>
+    </view>
+  </view>
+</view>

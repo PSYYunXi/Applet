@@ -1,0 +1,97 @@
+.alert-input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-section {
+  width: 630rpx;
+  height: 773rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  animation: fadeleftIn .2s;
+  animation-name: popIn;
+}
+
+.alert-header {
+  width: 630rpx;
+  height: 105rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #3b3f4f;
+  font-weight: 600;
+  position: relative;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  box-shadow: 0 1px 10px -1px rgb(230, 230, 230);
+}
+
+.alert-delete {
+  position: absolute;
+  right: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.alert-delete-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.alert-body {
+  padding: 30rpx 20rpx 30rpx 20rpx;
+  width: 490rpx;
+  height: 370rpx;
+  background-color: #f5f6fa;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-textarea {
+  background-color: #f5f6fa;
+  flex: 1;
+  color: #3b3f4f;
+  font-size: 32rpx;
+}
+
+.alert-footer {
+  width: 630rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.alert-button {
+  width: 230rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+}
+
+.alert-cancel {
+  margin-left: 65rpx;
+  margin-right: 40rpx;
+  color: #3b3f4f;
+  background-color: #fff;
+  border: 1px solid #979797;
+}
+
+.alert-save {
+  background-color: #427cfb;
+  color: #fff;
+}

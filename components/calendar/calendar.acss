@@ -1,0 +1,150 @@
+@import '/components/calendar/iconfont.acss';
+
+.alert-calendar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar {
+    color: #666;
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    min-height: 900rpx;
+    background-color: #fff;
+    animation: fadelogIn .2s;
+}
+
+.iconLast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.calendar .color-a {
+  color: #78d278;
+}
+.calendar .color-b {
+  color: #ff7977;
+}
+.calendar .color-c {
+  color: #3cb2ef;
+}
+.calendar .color-d {
+  color: #ffdb5c;
+}
+.calendar .color-e {
+  color: #ccc;
+}
+.calendar .color-g {
+  color: #3dc19a;
+}
+
+.section {
+  padding: 20rpx 30rpx;
+  background: #fff;
+}
+.title {
+    padding: 20rpx 0;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Helvetica Neue";
+}
+.week {
+    padding: 20rpx 0;
+    border-radius: 20rpx 20rpx 0 0;
+}
+.weekday {
+    margin-right: 1%;
+    width: 13.28%;
+    text-align: center;
+}
+.days {
+    padding: 10rpx 0;
+    flex-wrap: wrap;
+}
+.day {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 90rpx;
+    width: 98.5rpx;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+  margin: 0 auto;
+  width: 100%;
+  height: 90rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-item {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-range {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-point {
+  background-color: #427cf0;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+}
+
+.sign {
+  color: #fff;
+  background-color: #427cf0;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50rpx;
+  width: 700rpx;
+  padding: 0 25rpx;
+  -webkit-animation: fadelogIn .2s;
+  animation: fadelogIn .2s;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  color: #427cf0;
+  font-weight: 600;
+}
+
+.calendar-separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
