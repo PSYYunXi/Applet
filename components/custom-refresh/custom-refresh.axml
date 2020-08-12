@@ -1,0 +1,31 @@
+<scroll-view
+    scroll-y="{{enable}}"
+    style="height:100%"
+    enable-back-to-top="true"
+    class="tloader state-{{pullState}}"
+    onScroll="onScroll"
+
+    onScrollToLower="{{loadMore ? 'onLoadMore' : 'onNone'}}"
+    lower-threshold="60"
+   >
+    <view class="pull-body">
+        <view class="tloader-symbol" style="height:{{pullDownHeight+'px'}}">
+            <view class="tloader-msg"><text/></view>
+            <view class="tloader-loading"><text class="ui-loading"/></view>
+        </view>
+        <view 
+            class="tloader-body" 
+            onTouchMove="onTouchMove" 
+            onTouchStart="onTouchStart"
+            onTouchEnd="onTouchEnd"
+            style="transform: translate3D(0,{{pullDownHeight+'px'}},0)">
+            <slot></slot>
+        </view>
+        <view class="spinner" style="{{show ? '' : 'display:none'}}">
+            <view a:if="{{loadState=='normal'}}" class="bounce1 bounce"></view>
+            <view a:if="{{loadState=='normal'}}" class="bounce2 bounce"></view>
+            <view a:if="{{loadState=='normal'}}" class="bounce3 bounce"></view>
+            <view style="margin:20rpx 0 0 20rpx;color:#666666;">{{loadState=='normal' ? '加载中...' : '已经全部加载完毕'}}</view>
+        </view>
+    </view>
+</scroll-view>

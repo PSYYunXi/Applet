@@ -1,0 +1,284 @@
+.tloader-msg:after {
+  content: '下拉刷新';
+}
+.state-reset .tloader-msg:after {
+  content: '';
+}
+.state-pulling.enough .tloader-msg:after {
+  content: '松开刷新';
+}
+
+.state-success .tloader-msg:after {
+  content: '刷新成功';
+}
+
+.state-failure .tloader-msg:after {
+  content: '刷新失败';
+}
+
+.tloader-loading:after {
+  content: '正在加载...';
+}
+.tloader-symbol .tloader-loading:after {
+  content: '正在刷新...';
+}
+.tloader-btn:after {
+  content: '点击加载更多';
+}
+.tloader {
+  position: relative;
+  overflow-y: scroll;
+  width: 100%
+}
+.tloader.state-pulling {
+  overflow-y: hidden;
+}
+.tloader-symbol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #7676a1;
+  text-align: center;
+  background-color: #f6f5f8;
+  overflow: hidden;
+}
+
+.state-reset .tloader-symbol {
+  transition: height 0.2s;
+}
+
+.state-loading .tloader-symbol {
+  display: none;
+}
+.tloader-msg {
+  line-height: 60px;
+  font-size: 12px;
+}
+
+.pull-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.state-pulling .tloader-msg text {
+  display: inline-block;
+  font-size: 2em;
+  margin-right: .6em;
+  vertical-align: middle;
+  height: 1em;
+  border-left: 1px solid;
+  position: relative;
+  transition: transform .3s ease;
+}
+.state-pulling .tloader-msg text:before,
+.state-reset .tloader-msg text:before,
+.state-pulling .tloader-msg text:after,
+.state-reset .tloader-msg text:after {
+  content: '';
+  position: absolute;
+  font-size: .5em;
+  width: 1em;
+  bottom: 0px;
+  border-top: 1px solid;
+}
+.state-pulling .tloader-msg text:before,
+.state-reset .tloader-msg text:before {
+  right: 1px;
+  transform: rotate(50deg);
+  transform-origin: right;
+}
+
+.state-pulling .tloader-msg text:after,
+.state-reset .tloader-msg text:after {
+  left: 0px;
+  transform: rotate(-50deg);
+  transform-origin: left;
+}
+.state-pulling.enough .tloader-msg text {
+  transform: rotate(180deg);
+}
+.state-refreshing .tloader-msg {
+  height: 0;
+  opacity: 0;
+}
+
+.state-success .tloader-msg {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.state-success .tloader-msg text {
+  display: inline-block;
+  box-sizing: content-box;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 20px;
+  height: 1em;
+  width: 1em;
+  border: 1px solid;
+  border-radius: 100%;
+  position: relative;
+}
+.state-success .tloader-msg text:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  height: 12px;
+  width: 5px;
+  border: solid;
+  border-width: 0 1px 1px 0;
+  transform: rotate(40deg);
+}
+
+.state-failure .tloader-msg {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.state-failure .tloader-msg text {
+  display: inline-block;
+  box-sizing: content-box;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+.tloader-body {
+  margin-top: -1px;
+  padding-top: 1px;
+  height: 100%;
+}
+
+.state-refreshing .tloader-body {
+  transform: translate3d(0, 60px, 0);
+  transition: transform 0.2s;
+}
+.state-reset .tloader-body {
+  transition: transform 0.2s;
+}
+.state-refreshing .tloader-footer {
+  display: none;
+}
+.tloader-footer .tloader-btn {
+  color: #484869;
+  font-size: .9em;
+  text-align: center;
+  line-height: 60px;
+}
+.state-loading .tloader-footer .tloader-btn {
+  display: none;
+}
+.tloader-loading {
+  display: none;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+  color: #7676a1;
+}
+.tloader-loading .ui-loading {
+  font-size: 20px;
+  margin-right: .6rem;
+}
+.state-refreshing .tloader-symbol .tloader-loading,
+.state-loading .tloader-footer .tloader-loading {
+  display: block;
+}
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ui-loading {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #9494b6;
+  border-top-color: #fff;
+  border-radius: 100%;
+  animation: circle .8s infinite linear;
+}
+
+
+
+.spinner {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner .bounce {
+  margin-top: 20rpx;
+  width: 13rpx;
+  height: 21rpx;
+  display: inline-block;
+  animation-fill-mode: both;
+  margin-left: 13rpx;
+  transform: skewX(-15deg);
+}
+
+.spinner .bounce1 {
+  background: #108EE9;
+  animation: bouncedelay1 2.1s infinite linear;
+}
+
+.spinner .bounce2 {
+  background: #9DCDEF;
+  animation: bouncedelay2 2.1s infinite linear;
+}
+
+.spinner .bounce3 {
+  background: #EAECF3;
+  animation: bouncedelay3 2.1s infinite linear;
+}
+
+.spinner .spinner-word {
+  margin-top: 24rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+@keyframes bouncedelay1 {
+  0% {
+    background: #1bc9b9;
+  }
+  50% {
+    background: #a4d3ca;
+  }
+  100% {
+    background: #EAECF3;
+  }
+}
+
+@keyframes bouncedelay2 {
+  0% {
+    background: #a4d3ca;
+  }
+  50% {
+    background: #EAECF3;
+  }
+  100% {
+    background: #1bc9b9;
+  }
+}
+
+@keyframes bouncedelay3 {
+  0% {
+    background: #EAECF3;
+  }
+  50% {
+    background: #1bc9b9;
+  }
+  100% {
+    background: #a4d3ca;
+  }
+}
